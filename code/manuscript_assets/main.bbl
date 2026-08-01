@@ -1,0 +1,25 @@
+\begin{thebibliography}{2}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Joshi et~al.(2025)Joshi, Kranzl, Franke, Roos, and
+  Blatt]{joshi2025data}
+Manoj~Kumar Joshi, Florian Kranzl, Johannes Franke, Christian~F. Roos, and
+  Rainer Blatt.
+\newblock Bounded-error quantum simulation via hamiltonian and lindbladian
+  learning, 2025.
+
+\bibitem[Kraft et~al.(2025)Kraft, Joshi, Lam, Olsacher, Kranzl, Franke, Joshi,
+  Blatt, Smerzi, Stilck~Fran\c{c}a, Vermersch, Kraus, Roos, and
+  Zoller]{kraft2025beqs}
+Tristan Kraft, Manoj~Kumar Joshi, William Lam, Tobias Olsacher, Florian Kranzl,
+  Johannes Franke, Lata~Kh Joshi, Rainer Blatt, Augusto Smerzi, Daniel
+  Stilck~Fran\c{c}a, Beno\^{\i}t Vermersch, Barbara Kraus, Christian~F. Roos,
+  and Peter Zoller.
+\newblock Bounded-error quantum simulation via hamiltonian and lindbladian
+  learning, 2025.
+
+\end{thebibliography}

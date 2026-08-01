@@ -1,0 +1,31 @@
+{
+  "schema_version": 2,
+  "title": "Auditing Matrix-Free Frechet Actions for Linear Open-System Learning",
+  "deterministic_results": {
+    "path": "code/src/krylov_open_quantum/results/results.json",
+    "sha256": "c1f9f8b169254116e37c0ede704e9ef60c05791e8b37fac155014d92d062c596"
+  },
+  "measured_figure_snapshot": {
+    "path": "code/results/figure_results.json",
+    "sha256": "80812442da2e39139a8f9ab65dc397fee451843b531761e6e123ba6c6d8b148d",
+    "note": "Contains machine-specific measured runtimes and is not part of byte-for-byte replay."
+  },
+  "derived_data": [
+    {
+      "path": "code/src/krylov_open_quantum/data/neel_51ion_imbalance.csv",
+      "sha256": "8bb1087b6e578c810352097f46ef4024e6e56de6d6b5fd7cc5434fc9f5ee08d7"
+    },
+    {
+      "path": "code/src/krylov_open_quantum/data/neel_51ion_site_imbalance.csv",
+      "sha256": "c2df31da65bb2267a17910bf64ee9ba7d1e9de1e92eab7cfe1a013de1f036d3b"
+    }
+  ],
+  "original_data_source": "https://zenodo.org/records/17750419",
+  "commands": {
+    "reproduce": "krylov-open-quantum-reproduce --verify",
+    "tests": "python -m pytest -q code/tests",
+    "figures": "krylov-open-quantum-figures --output code/manuscript_assets/figures --json-output code/results/figure_results.json",
+    "data_rebuild": "python code/scripts/fetch_and_build_neel.py",
+    "validate": "python code/scripts/validate_release.py"
+  }
+}

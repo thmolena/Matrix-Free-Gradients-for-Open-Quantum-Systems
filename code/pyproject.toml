@@ -1,0 +1,51 @@
+[build-system]
+requires = ["setuptools>=77,<82", "wheel>=0.45,<1"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "krylov-open-quantum"
+version = "2.0.0"
+description = "Variance-weighted residual-subspace recovery for missing ion-resolved measurements"
+readme = "README.md"
+requires-python = ">=3.9,<3.14"
+license = "BSD-3-Clause"
+license-files = ["LICENSE", "DATA_LICENSE.txt"]
+authors = [
+  {name = "Molena Huynh", email = "thnguy22@ncsu.edu"}
+]
+keywords = ["Arnoldi", "matrix-free", "open quantum systems", "parameter learning"]
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Intended Audience :: Science/Research",
+  "Programming Language :: Python :: 3",
+  "Topic :: Scientific/Engineering",
+]
+dependencies = [
+  "numpy>=1.26,<3",
+  "scipy>=1.11,<2",
+]
+
+[project.optional-dependencies]
+test = [
+  "pytest>=8,<10",
+]
+figures = [
+  "matplotlib>=3.7,<4",
+]
+
+[project.scripts]
+krylov-open-quantum-reproduce = "krylov_open_quantum.cli:main"
+krylov-open-quantum-figures = "krylov_open_quantum.figures:main"
+ion-subspace-study = "krylov_open_quantum.recovery_study:main"
+ion-subspace-figures = "krylov_open_quantum.recovery_figures:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+krylov_open_quantum = ["data/*.csv", "results/*.json"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-ra"
+pythonpath = ["src"]

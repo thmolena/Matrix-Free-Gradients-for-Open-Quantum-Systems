@@ -1,0 +1,19 @@
+The files src/krylov_open_quantum/data/neel_51ion_imbalance.csv and
+src/krylov_open_quantum/data/neel_51ion_site_imbalance.csv are derived
+summaries of the experimental Neel-state measurements deposited by Manoj Kumar
+Joshi, Florian Kranzl, Johannes Franke, Roos Roos, and Rainer Blatt in
+"Bounded-Error Quantum Simulation via Hamiltonian and Lindbladian Learning,"
+Zenodo, version 1, 2025, DOI: 10.5281/zenodo.17750419.
+
+The source dataset is licensed under Creative Commons Attribution 4.0
+International (CC BY 4.0). The first summary reports, at each of 11 times, the
+mean and standard error of the staggered spin imbalance across 20 batches, 50
+shots per batch, and 51 ions. The second reports the corresponding mean and
+standard error separately for every ion and time (561 ion-time records). Both
+can be regenerated from the archive file
+DataHL51IonmeasType14Base3.mat by decoding each decimal shot into 51 bits,
+mapping bits 0 and 1 to spin values +1 and -1, and correlating the spin string
+with the initial alternating Neel pattern. The sign convention is chosen so
+the initial aggregate imbalance is positive.
+
+License text: https://creativecommons.org/licenses/by/4.0/

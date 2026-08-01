@@ -1,0 +1,120 @@
+{
+  "claims": {
+    "cpu_only": true,
+    "experimental_data_used": true,
+    "floating_point_certificate_claimed": false,
+    "matrix_free_algorithm": true,
+    "microscopic_51ion_model_claimed": false,
+    "site_resolved_records_used": 561,
+    "theorem_scope": "exact-arithmetic Euclidean Arnoldi truncation bound given a valid logarithmic-norm upper bound"
+  },
+  "experimental_fit": {
+    "fitted_angular_frequency_per_ms": 0.74844,
+    "fitted_damping_rate_per_ms": 0.25959,
+    "ions": 51,
+    "largest_full_dimension_tangent_truncation_estimate": 4.5635e-31,
+    "model_scope": "effective two-coordinate damped mode, not a microscopic 51-ion identification",
+    "optimizer_converged": true,
+    "rmse_staggered_imbalance": 0.078716,
+    "shots_per_time": 1000,
+    "source_doi": "10.5281/zenodo.17750419",
+    "source_license": "CC-BY-4.0",
+    "time_points": 11
+  },
+  "schema_version": 2,
+  "site_resolved_learning": {
+    "baseline_converged": true,
+    "baseline_parameters": [
+      0.73668,
+      0.23529,
+      0.0
+    ],
+    "baseline_test_rmse": 0.10836,
+    "baseline_train_rmse": 0.12947,
+    "coupled_converged": true,
+    "coupled_parameters": [
+      0.73668,
+      0.23524,
+      0.24496
+    ],
+    "coupled_test_rmse": 0.10848,
+    "coupled_train_rmse": 0.12939,
+    "dense_augmented_entries_per_parameter": 41616,
+    "dense_generator_materialized": false,
+    "derivative_applications_per_full_evaluation": 924,
+    "generator_applications_per_full_evaluation": 1848,
+    "ions": 51,
+    "krylov_dimension": 28,
+    "largest_truncation_bound_estimate": 3.2583e-09,
+    "matrix_free": true,
+    "model_scope": "site-resolved effective coupled oscillator; not a microscopic 51-ion Lindbladian",
+    "records": 561,
+    "source_doi": "10.5281/zenodo.17750419",
+    "source_license": "CC-BY-4.0",
+    "state_dimension": 102,
+    "test_time_points": 3,
+    "time_points": 11,
+    "train_time_points": 7
+  },
+  "stress_validation": {
+    "augmented_tangents": {
+      "augmented_dimension": 16,
+      "cases": 32,
+      "krylov_dimension": 4,
+      "maximum_estimate_to_error_ratio": 1.0662,
+      "minimum_estimate_to_error_ratio": 1.0182,
+      "observed_failures": 0,
+      "reference": "scipy.linalg.expm_frechet",
+      "seed": 732,
+      "state_dimension": 8
+    },
+    "generic_actions": {
+      "cases": 64,
+      "dimension": 12,
+      "krylov_dimension": 4,
+      "maximum_estimate_to_error_ratio": 1.1334,
+      "minimum_estimate_to_error_ratio": 1.0173,
+      "observed_failures": 0,
+      "reference": "scipy.linalg.expm",
+      "seed": 731
+    },
+    "near_breakdown_regression": {
+      "basis_dimension": 1,
+      "breakdown_tolerance": 1e-06,
+      "error_2norm": 8.9022e-09,
+      "matrix_eigenvalue_gap": 1e-08,
+      "observed_coverage": true,
+      "retained_residual_norm": 5e-09,
+      "truncation_bound_estimate": 8.93e-09
+    }
+  },
+  "truncation_estimator_validation": {
+    "all_cases_observed_covered": true,
+    "cases": [
+      {
+        "coverage_ratio": 1.0914,
+        "error_2norm": 0.00027148,
+        "observed_coverage": true,
+        "steps": 4,
+        "truncation_bound_estimate": 0.0002963
+      },
+      {
+        "coverage_ratio": 1.0588,
+        "error_2norm": 5.3497e-07,
+        "observed_coverage": true,
+        "steps": 6,
+        "truncation_bound_estimate": 5.6643e-07
+      },
+      {
+        "coverage_ratio": 1.0594,
+        "error_2norm": 3.358e-10,
+        "observed_coverage": true,
+        "steps": 8,
+        "truncation_bound_estimate": 3.5574e-10
+      }
+    ],
+    "dimension": 18,
+    "log_norm_bound": -0.99198,
+    "time": 0.8
+  }
+}

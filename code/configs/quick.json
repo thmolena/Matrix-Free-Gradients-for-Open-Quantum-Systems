@@ -1,0 +1,8 @@
+{
+  "seed": 0,
+  "matrix_dimension": 8,
+  "krylov_steps": 8,
+  "function": "exp",
+  "reorthogonalize": true,
+  "finite_difference_step": 1e-6
+}
